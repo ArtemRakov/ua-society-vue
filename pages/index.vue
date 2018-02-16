@@ -12,8 +12,7 @@
 
                 <div class="navbar-ua show-nav-small" style="display: none;">
                     <div class="dropdown__ua">
-
-                        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false"> </i>
+                        <i class="fa fa-bars dropdown-toggle-ua"> </i>
                         <ul class="dropdown-menu dropdown-menu-right navbar-ua-dropdown-menu">
                             <li class="dropdown__list">
                                 <!-- <%# link_to 'About us', '#', class: 'dropdown_links'  %> -->
@@ -32,7 +31,7 @@
                     </div>
                 </div>
                 <div class="home-banner__content">
-                    <!-- <%= image_tag "qmul-logo-white-small.png", class: "home-banner__logo"  %> -->
+                     <img src="~/assets/images/qmul-logo-white-small.png" class="home-banner__logo">
                     <h1 class="home-banner__title">  <span class="home-banner__title-main"> Queen Mary </span>  <span class="home-banner__title-sub"> Ukrainian Society  </span> </h1>
                 </div>
             </div>
@@ -47,7 +46,7 @@
                     <div class="about-us__item-1">
                         <div class="about-us__description">
                             <div class="about-us__img-h3">
-                                <!-- <%= image_tag 'book.png', class: 'about-us__image-small' %> -->
+                                <img src="~/assets/images/book.png" class="about-us__image-small">
                                 <h3 class="about-us__h3"> OUR UNIVERSITY </h3>
                             </div>
                             <p class="about-us__text">
@@ -59,7 +58,7 @@
 
                     <div class="about-us__item-2 hide-phone">
                         <div class="about-us__image">
-                            <!-- <%= image_tag 'qmul-logo-blue.png', class: 'about-us__qmul' %> -->
+                            <img src="~/assets/images/qmul-logo-blue.png" class="about-us__qmul">
                         </div>
                     </div>
 
@@ -68,6 +67,7 @@
                 <div class="about-us__flex">
                     <div class="about-us__item-3 hide-phone">
                         <div class="about-us__image">
+                            <img src="~/assets/images/logo-qmus.png" class="about-us__society">
                             <!-- <%= image_tag 'logo-qmus.png', class: 'about-us__society' %> -->
                         </div>
                     </div>
@@ -75,6 +75,7 @@
                     <div class="about-us__item-4">
                         <div class="about-us__description">
                             <div class="about-us__img-h3">
+                                <img src="~/assets/images/people.png" class="about-us__image-small">
                                 <!-- <%= image_tag 'people.png', class: 'about-us__image-small' %> -->
                                 <h3 class="about-us__h3"> UKRAINIAN SOCIETY </h3>
                             </div>
@@ -100,6 +101,7 @@
                     <div class="row-eq">
                         <div class="col-xs-12 col-md-6" align="center">
                             <div class="card card__blue">
+                                <img src="~/assets/images/science_y.png" class="card__logo">
                                 <!-- <%= image_tag 'science_y.png', class: 'card__logo' %> -->
                                 <p class="card__btn-like card__text_y"> Academic development </p>
                                 <p class="card__text card__text_y">
@@ -110,6 +112,7 @@
                         </div>
                         <div class="col-xs-12 col-md-6" align="center">
                             <div class="card card__yellow">
+                                <img src="~/assets/images/globe_b.png" class="card__logo">
                                 <!-- <%= image_tag 'globe_b.png', class: 'card__logo' %> -->
                                 <p class="card__btn-like card__text_b"> General development </p>
                                 <p class="card__text card__text_b">
@@ -128,6 +131,7 @@
     <footer class="footer">
         <div class="box">
             <div class="footer__content">
+                <img src="~/assets/images/qmul-logo-blue-small.png" class="footer__logo hide-tab">
                 <!-- <%= image_tag 'qmul-logo-blue-small.png', class: 'footer__logo hide-tab' %> -->
                 <ul class="footer__list">
                     <li class="footer__list-item footer__list-item-1"> <a href="#"> About us </a> </li>
@@ -143,68 +147,16 @@
             </div>
         </div>
     </footer>
-
-  <!-- <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        ua-society-vue
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section> -->
 </div>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  components: {
-    AppLogo
-  }
+
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

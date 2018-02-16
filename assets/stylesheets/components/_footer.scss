@@ -64,7 +64,7 @@
 
 
     &__links > a {
-
+        
         &:link,
         &:visited,
         & {
@@ -73,7 +73,7 @@
             text-decoration: none;
 
             &:not(:last-child) {
-                margin-right: 1rem;
+                margin-right: 1.5rem !important;
             }
         }
 
