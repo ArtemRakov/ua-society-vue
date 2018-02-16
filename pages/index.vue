@@ -6,7 +6,9 @@
             <div class="home-banner">
                 <div class="navbar-ua hide-tab" id="navbar-bigscreen">
                     <nuxt-link class="navbar-ua__link navbar-inpage" id="aboutlink"  to="/about" > About us </nuxt-link>
-                    <nuxt-link class="navbar-ua__link" to="#"> Support us </nuxt-link>
+                    <nuxt-link class="navbar-ua__link" to="#"> Our team </nuxt-link>
+                    <nuxt-link class="navbar-ua__link" to="#"> Contact us</nuxt-link>
+                    <nuxt-link class="navbar-ua__link" to="#"> Sponsors </nuxt-link>
                 </div>
 
                 <div class="navbar-ua show-nav-small" style="display: none;">
@@ -18,11 +20,13 @@
                                 <nuxt-link class="dropdown_links navbar-inpage" id="aboutlink" to="/about"> About us </nuxt-link>
                             </li>
                             <li class="dropdown__list">
-                                <nuxt-link class="dropdown_links navbar-inpage" id="ourgoalslink" to="#"> Our goals </nuxt-link>
-
+                                <nuxt-link class="dropdown_links navbar-inpage" to="#"> Our team </nuxt-link>
                             </li>
                             <li class="dropdown__list">
-                                <nuxt-link class="dropdown_links navbar-inpage" to="#"> Support us </nuxt-link>
+                                <nuxt-link class="dropdown_links navbar-inpage" to="#"> Contact us </nuxt-link>
+                            </li>
+                            <li class="dropdown__list">
+                                <nuxt-link class="dropdown_links navbar-inpage" to="#"> Sponsors </nuxt-link>
                             </li>
                         </ul>
                     </div>
@@ -36,7 +40,7 @@
 
         <section class="about-us" id="about">
             <div class="text-center">
-                <h2 class="heading-secondary"> About us </h2>
+                <h2 class="heading-secondary"> who we are </h2>
             </div>
             <div class="box">
                 <div class="about-us__flex">
@@ -96,7 +100,7 @@
                 <div class="row">
 
                     <div class="row-eq">
-                        <div class="col-xs-12 col-md-6" align="center">
+                        <div class="col-xs-12 col-lg-6" align="center">
                             <div class="card card__blue">
                                 <img src="~/assets/images/science_y.png" class="card__logo">
                                 <!-- <%= image_tag 'science_y.png', class: 'card__logo' %> -->
@@ -107,7 +111,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-md-6" align="center">
+                        <div class="col-xs-12 col-lg-6" align="center">
                             <div class="card card__yellow">
                                 <img src="~/assets/images/globe_b.png" class="card__logo">
                                 <!-- <%= image_tag 'globe_b.png', class: 'card__logo' %> -->
@@ -128,13 +132,13 @@
     <footer class="footer">
         <div class="box">
             <div class="footer__content">
-                <img src="~/assets/images/qmul-logo-blue-small.png" class="footer__logo hide-tab">
+                <img src="~/assets/images/logo-qmus.png" class="footer__logo hide-tab">
                 <!-- <%= image_tag 'qmul-logo-blue-small.png', class: 'footer__logo hide-tab' %> -->
                 <ul class="footer__list">
-                    <li class="footer__list-item footer__list-item-1"> <a href="#"> About us </a> </li>
-                    <li class="footer__list-item footer__list-item-2"> <a href="#"> Our goals </a> </li>
-                    <li class="footer__list-item"> <a href="#"> Sponsors </a> </li>
-                    <li class="footer__list-item"> <a href="#"> Support us </a> </li>
+                    <li class="footer__list-item footer__list-item-1"> <nuxt-link to="/about"> About us </nuxt-link> </li>
+                    <li class="footer__list-item footer__list-item-2"> <nuxt-link to="#"> Our team </nuxt-link> </li>
+                    <li class="footer__list-item"> <nuxt-link to="#"> Contact us </nuxt-link> </li>
+                    <li class="footer__list-item"> <nuxt-link to="#"> Sponsors </nuxt-link> </li>
                 </ul>
                 <div class="footer__links">
                 <a target="_blank" href="https://www.facebook.com/QueenMaryUkrainianSociety/" class="footer__links-facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a>
