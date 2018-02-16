@@ -5,27 +5,24 @@
         <section>
             <div class="home-banner">
                 <div class="navbar-ua hide-tab" id="navbar-bigscreen">
-                    <a class="navbar-ua__link navbar-inpage" id="aboutlink"  href="#" > About us </a>
-                    <a class="navbar-ua__link navbar-inpage" id="ourgoalslink"  href="#" > Our goals </a>
-                    <a class="navbar-ua__link" href="#"> Support us </a>
+                    <nuxt-link class="navbar-ua__link navbar-inpage" id="aboutlink"  to="/about" > About us </nuxt-link>
+                    <nuxt-link class="navbar-ua__link" to="#"> Support us </nuxt-link>
                 </div>
 
                 <div class="navbar-ua show-nav-small" style="display: none;">
                     <div class="dropdown__ua">
-                        <i class="fa fa-bars dropdown-toggle-ua"> </i>
-                        <ul class="dropdown-menu dropdown-menu-right navbar-ua-dropdown-menu">
+                        <i v-on-clickaway="awayFromDropdown" @click="dropdownOpen = !dropdownOpen" class="fa fa-bars dropdown-toggle-ua"> </i>
+                        
+                        <ul v-if="dropdownOpen" class="dropdown-menu-right navbar-ua-dropdown-menu">
                             <li class="dropdown__list">
-                                <!-- <%# link_to 'About us', '#', class: 'dropdown_links'  %> -->
-                                <a class="dropdown_links navbar-inpage" id="aboutlink" href="#"> About us </a>
+                                <nuxt-link class="dropdown_links navbar-inpage" id="aboutlink" to="/about"> About us </nuxt-link>
+                            </li>
+                            <li class="dropdown__list">
+                                <nuxt-link class="dropdown_links navbar-inpage" id="ourgoalslink" to="#"> Our goals </nuxt-link>
 
                             </li>
                             <li class="dropdown__list">
-                                <!-- <%# link_to 'Our goals', '#', class: 'dropdown_links' %> -->
-                                <a class="dropdown_links navbar-inpage" id="ourgoalslink" href="#"> Our goals </a>
-
-                            </li>
-                            <li class="dropdown__list">
-                                <a class="navbar-ua__link" href="#"> Support us </a>
+                                <nuxt-link class="dropdown_links navbar-inpage" to="#"> Support us </nuxt-link>
                             </li>
                         </ul>
                     </div>
@@ -151,9 +148,20 @@
 </template>
 
 <script>
+import { mixin as clickaway } from 'vue-clickaway';
 
 export default {
-
+    mixins: [clickaway], 
+    data() {
+        return {
+            dropdownOpen: false
+        }   
+    },
+    methods: {
+        awayFromDropdown() {
+            this.dropdownOpen = false
+        }
+    }
 }
 </script>
 

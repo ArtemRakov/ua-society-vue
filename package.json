@@ -15,7 +15,8 @@
   "dependencies": {
     "@nuxtjs/bootstrap-vue": "^2.0.4",
     "bootstrap-vue": "^2.0.0-rc.1",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vue-clickaway": "^2.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
