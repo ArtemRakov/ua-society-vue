@@ -10,9 +10,25 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" }
     ]
   },
+
+  modules: [
+    // Simple usage
+    '@nuxtjs/bootstrap-vue'
+  ],
+
+  css: [
+    // Load a Node.js module directly (here it's a Sass file)
+    // CSS file in the project
+    // '@/assets/css/main.css',
+    // SCSS file in the project
+    '@/assets/stylesheets/application.scss'
+  ],
+
+
   /*
   ** Customize the progress bar color
   */
