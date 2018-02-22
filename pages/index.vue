@@ -9,6 +9,10 @@
                     <nuxt-link class="navbar-ua__link" to="#"> Our team </nuxt-link>
                     <nuxt-link class="navbar-ua__link" to="#"> Contact us</nuxt-link>
                     <nuxt-link class="navbar-ua__link" to="#"> Sponsors </nuxt-link>
+                    <div class="languages">
+                        <img src="~/assets/images/uk.png" alt="uk flag" class="languages__img" >
+                        <span class="caret"></span>
+                    </div>
                 </div>
 
                 <div class="navbar-ua show-nav-small" style="display: none;">
