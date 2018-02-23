@@ -110,6 +110,10 @@
 
                 </div>
             </div>
+
+            <div class="text-center">
+                <nuxt-link to="/about" class="btn-text"> Read more &#8594; </nuxt-link>
+            </div>
         </section>
 
         <section class="our-goals" id="ourgoals">

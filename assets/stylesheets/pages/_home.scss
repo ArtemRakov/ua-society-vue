@@ -188,7 +188,7 @@
 
 .about-us {
     padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 7rem;
 
     @include respond(tab-port) {
         padding-bottom: 5rem;
@@ -201,7 +201,6 @@
         // justify-content: flex-start;
         // margin-bottom: 1.5rem;
         padding: 1.5rem 0;
-
     }
 
 
@@ -464,4 +463,29 @@
     border-top: 4px solid \9;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
+}
+
+.btn-text {
+    margin-top: 7rem;
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color-primary-blue;
+    border-bottom: 1px solid $color-primary-blue;
+    transition: all .2s;
+    padding: 3px;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: $color-primary-blue;
+        transform: translateY(-0.3rem);
+        box-shadow: 0 0.5rem 2rem rgba(#000000, 0.2);
+    }
+
+    &:active, &:focus {
+        outline: none;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(#000000, 0.2);
+    }
 }
