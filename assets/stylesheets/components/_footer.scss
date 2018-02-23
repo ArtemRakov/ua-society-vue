@@ -9,10 +9,38 @@
     &__content {
         display: flex;
         align-items: center;
+        justify-content: space-around;
 
         @include respond(phone) {
             flex-direction: column;
         }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__contact-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    &__contact-img {
+        height: 40px;
+        margin-right: 1.5rem;
+    }
+
+    &__text {
+        color: #333333;
     }
 
     &__list {
