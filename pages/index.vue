@@ -23,7 +23,7 @@
                                 <nuxt-link class="languages__links navbar-inpage" to="#"> <img src="~/assets/images/ukraine.png" alt="ua flag" class="languages__img" > Ukraine </nuxt-link>
                             </li>
                             <li class="dropdown__list">
-                                <nuxt-link class="languages__links navbar-inpage" to="#"> <img src="~/assets/images/russia.png" alt="ru flag" class="languages__img" > Russian </nuxt-link>
+                                <nuxt-link class="languages__links navbar-inpage" to="#"> <img src="~/assets/images/russia.png" alt="ru flag" class="languages__img" > Russia </nuxt-link>
                             </li>
                         </ul>
                     </div>
