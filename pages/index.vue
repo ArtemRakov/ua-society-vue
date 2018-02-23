@@ -10,8 +10,22 @@
                     <nuxt-link class="navbar-ua__link" to="#"> Contact us</nuxt-link>
                     <nuxt-link class="navbar-ua__link" to="#"> Sponsors </nuxt-link>
                     <div class="languages">
-                        <img src="~/assets/images/uk.png" alt="uk flag" class="languages__img" >
-                        <span class="caret"></span>
+                        <div v-on-clickaway="awayFromLanguages" @click="languagesDropdown = !languagesDropdown" class="languages__dropdown" >
+                            <img src="~/assets/images/uk.png" alt="uk flag" class="languages__img" >
+                            <span class="caret"></span>
+                        </div>
+
+                        <ul class="dropdown-menu-right languages__menu" v-if="languagesDropdown">
+                            <li class="dropdown__list">
+                                <nuxt-link class="languages__links navbar-inpage" id="aboutlink" to="/about">  <img src="~/assets/images/uk.png" alt="uk flag" class="languages__img" > English </nuxt-link>
+                            </li>
+                            <li class="dropdown__list">
+                                <nuxt-link class="languages__links navbar-inpage" to="#"> <img src="~/assets/images/ukraine.png" alt="ua flag" class="languages__img" > Ukraine </nuxt-link>
+                            </li>
+                            <li class="dropdown__list">
+                                <nuxt-link class="languages__links navbar-inpage" to="#"> <img src="~/assets/images/russia.png" alt="ru flag" class="languages__img" > Russian </nuxt-link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -38,6 +52,8 @@
                 <div class="home-banner__content">
                      <img src="~/assets/images/qmul-logo-white-small.png" class="home-banner__logo">
                     <h1 class="home-banner__title">  <span class="home-banner__title-main"> Queen Mary </span>  <span class="home-banner__title-sub"> Ukrainian Society  </span> </h1>
+
+                    <a href="#" class="home-banner__btn"> JOIN US </a>
                 </div>
             </div>
         </section>
@@ -162,12 +178,16 @@ export default {
     mixins: [clickaway], 
     data() {
         return {
-            dropdownOpen: false
+            dropdownOpen: false,
+            languagesDropdown: false
         }   
     },
     methods: {
         awayFromDropdown() {
             this.dropdownOpen = false
+        },
+        awayFromLanguages() {
+            this.languagesDropdown = false
         }
     }
 }
