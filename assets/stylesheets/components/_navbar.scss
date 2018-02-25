@@ -1,15 +1,25 @@
 .navbar-ua {
 
     
-    height: 7rem;
+    height: 8rem;
     background-color: transparent;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
+    padding: 0 50px;
 
     align-self: flex-start;
 
+    &__logo {
+        height: 6rem;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__link {
     
@@ -35,7 +45,6 @@
 
 .dropdown-toggle-ua {
     font-size: 3.5rem;
-    margin-right: 3rem;
 }
 
 .navbar-ua-dropdown-menu {
@@ -117,4 +126,32 @@
     @include respond(phone) {
         display: none;
     }
+}
+
+.navbar-white .navbar-ua__link {
+    &:link,
+    &:visited,
+    & {
+        color: $color-grey !important;        
+    }
+        &:hover {
+            border-bottom: 1px solid $color-grey;
+            color:$color-grey !important;
+        }
+}
+
+.navbar-white .languages__dropdown {
+    border: 1px solid $color-grey;
+}
+
+.navbar-white .caret {
+    border-top: 4px dashed $color-grey;
+} 
+
+.navbar-white {
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+}
+
+.navbar-white .dropdown-toggle-ua {
+    color: $color-grey;
 }

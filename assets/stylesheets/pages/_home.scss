@@ -387,7 +387,6 @@
         border-radius: 10000px;
             
         margin-top: 0.5rem;
-        margin-right: 5rem;
     
         display: flex;
         justify-content: space-around;
@@ -406,7 +405,7 @@
     &__menu {
         position: absolute;
         top: 100%;
-        right: 40px !important;
+        right: -10px !important;
         /* left: 0 !important; */
         z-index: 1000;
         float: left;
