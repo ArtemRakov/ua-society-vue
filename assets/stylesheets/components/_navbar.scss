@@ -27,12 +27,15 @@
     &:visited,
     & {
         margin-top: 0.5rem;
-        margin-right: 5rem;
         color: #fff;
         font-family: $headers-font;
         font-weight: 300;
         font-size: 1.8rem;
         text-decoration: none;
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
         
     }
         &:hover {
