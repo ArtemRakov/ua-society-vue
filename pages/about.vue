@@ -66,6 +66,15 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="contact-us">
+            <div class="box">
+                <div class="contact-us__card">
+                    
+                </div>
+            </div>
+        </section>
     </div>    
 </template>
 
