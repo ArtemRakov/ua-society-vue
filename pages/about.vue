@@ -2,21 +2,8 @@
     <div>
         <navbar class="navbar-white"></navbar>
         <section>
-            <!-- <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-5" style="background-color: #52ACFF">
-                        <div class="about-header__text-box">
-                            <p class="about-header__text">  We help students from all over the world to become familiar with the Ukrainian culture, customs, history and political development.  </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <img src="~/assets/images/queen-mary.png" alt="#" class="about-header__img">
-                    </div>
-                </div>
-            </div> -->
-
             <div class="about-header">
+                <div class="about-header__animation"></div>
                 <div class="about-header__text-box">
                     <p class="about-header__text">  We help students from all over the world to become familiar with the  <span style="color: #FFE32C;"> Ukrainian </span> culture, customs, history and political development.  </p>
                 </div>
@@ -34,7 +21,7 @@
             <div class="container">
                 <div class="about-mission__box">
                     <p class="about-mission__text">
-                        Queen Mary University of London is a member of Russell Group Association and belongs to TOP-10 universities in London. The notable alumni of our university are recognised within the business and economics fields all over the world. Aside from the organization of social events, contributing to the popularisation of the Ukrainian culture, we also aim to engage our students academically. 
+                        Queen Mary University of London is a member of Russell Group Association and belongs to TOP-10 universities in London. The notable alumni of our university are recognised within the business and economics fields all over the world. Aside from the organization of social events, <span style="text-decoration: underline;"> contributing to the popularisation of the  Ukrainian culture </span>. We also aim to engage our students academically. 
                     </p>
                     <p class="about-mission__text">
                         The activities organised by our society specifically contribute to the raise of  awareness of the Ukrainian heritage internationally. Furthermore, we allow students from all over the world to become familiar with the Ukrainian culture, customs, history and political development. 
