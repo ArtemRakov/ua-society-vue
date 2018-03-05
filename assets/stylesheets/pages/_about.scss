@@ -47,13 +47,13 @@
 
 @keyframes slideOut {
     0% {
-        background-size: 100%;
         opacity: 1;
+        width: 100%;
     }
 
     100% {
-        background-size: 400%;
         opacity: 1;
+        width: 0%;
     }
 
 
