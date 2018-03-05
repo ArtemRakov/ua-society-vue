@@ -45,8 +45,8 @@
 
     &__btn {
         margin-top: 3rem;
-        &, 
-        &:link, 
+        &,
+        &:link,
         &:visited {
             text-transform: uppercase;
             text-decoration: none;
@@ -60,7 +60,7 @@
             cursor: pointer;
             background-color: #fff;
             text-decoration: none;
-            
+
             animation: moveInBottom 0.5s ease-out;
             animation-delay: 0.75s;
             animation-fill-mode: backwards;
@@ -374,20 +374,20 @@
 
         //   one-way
         // width: 50px;
-    
+
         // another-way
         padding: 5px 10px;
         border: 1px solid #fff;
-    
-        
-        
-    
-    
+
+
+
+
+
         position: relative;
         border-radius: 10000px;
-            
+
         margin-top: 0.5rem;
-    
+
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -442,12 +442,12 @@
         color: #333;
         font-size: 1.8rem;
         white-space: nowrap;
-        padding: 10px 20px !important;    
+        padding: 10px 20px !important;
         &:hover {
             text-decoration: none;
             color: #333333;
             background-color: #DEDEDE;
-        }   
+        }
     }
 
 }
@@ -488,3 +488,7 @@
         box-shadow: 0 0.5rem 1rem rgba(#000000, 0.2);
     }
 }
+
+
+
+div#preload { display: none; }

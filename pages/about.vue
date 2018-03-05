@@ -8,7 +8,7 @@
                     <p class="about-header__text">  We help students from all over the world to become familiar with the  <span style="color: #FFE32C;"> Ukrainian </span> culture, customs, history and political development.  </p>
                 </div>
 
-                <div class="about-header__img" :style="{background: `url(${image})`}">
+                <div class="about-header__img">
                     &nbsp;
                 </div>
             </div>
@@ -21,10 +21,10 @@
             <div class="container">
                 <div class="about-mission__box">
                     <p class="about-mission__text">
-                        Queen Mary University of London is a member of Russell Group Association and belongs to TOP-10 universities in London. The notable alumni of our university are recognised within the business and economics fields all over the world. Aside from the organization of social events, <span style="text-decoration: underline;"> contributing to the popularisation of the  Ukrainian culture </span>. We also aim to engage our students academically. 
+                        Queen Mary University of London is a member of Russell Group Association and belongs to TOP-10 universities in London. The notable alumni of our university are recognised within the business and economics fields all over the world. Aside from the organization of social events, <span style="text-decoration: underline;"> contributing to the popularisation of the  Ukrainian culture </span>. We also aim to engage our students academically.
                     </p>
                     <p class="about-mission__text">
-                        The activities organised by our society specifically contribute to the raise of  awareness of the Ukrainian heritage internationally. Furthermore, we allow students from all over the world to become familiar with the Ukrainian culture, customs, history and political development. 
+                        The activities organised by our society specifically contribute to the raise of  awareness of the Ukrainian heritage internationally. Furthermore, we allow students from all over the world to become familiar with the Ukrainian culture, customs, history and political development.
                     </p>
                 </div>
             </div>
@@ -71,11 +71,11 @@
         <section class="contact-us">
             <div class="box">
                 <div class="contact-us__card">
-                    
+
                 </div>
             </div>
         </section>
-    </div>    
+    </div>
 </template>
 
 <script>
@@ -85,11 +85,15 @@ export default {
     components: {
         Navbar
     },
-    data() {
-        return {
-            image: '/queen-mary.png'
+    methods: {
+        preloadImages(url) {
+            var img = new Image();
+            img.src = url;
         }
-    }   
+    },
+    beforeMount() {
+        this.preloadImages('/queen-mary.png');
+    }
 }
 </script>
 
