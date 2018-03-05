@@ -8,7 +8,7 @@
                     <p class="about-header__text">  We help students from all over the world to become familiar with the  <span style="color: #FFE32C;"> Ukrainian </span> culture, customs, history and political development.  </p>
                 </div>
 
-                <div class="about-header__img">
+                <div class="about-header__img" :style="{background: `url(${image})`}">
                     &nbsp;
                 </div>
             </div>
@@ -84,7 +84,12 @@ import Navbar from '../components/Navbar'
 export default {
     components: {
         Navbar
-    }
+    },
+    data() {
+        return {
+            image: '/queen-mary.png'
+        }
+    }   
 }
 </script>
 
