@@ -71,19 +71,45 @@
         <section class="contact-us">
             <div class="box">
                 <div class="contact-us__card">
+                    <div class="contact-us__form">
+                        <form action="#" class="form"> 
+                            <div>
+                                <h2 class="heading-secondary" style="margin-bottom: 4rem">
+                                    contact us
+                                </h2>
+                            </div>
+                            <div class="form__group">
+                                <label for="name" class="form__label"> Full Name </label>
+                                <input type="text" class="form__input" id='name' required>
+                            </div>
 
+                            <div class="form__group">
+                                <label for="email" class="form__label"> Email address </label>
+                                <input type="email" class="form__input" placeholder="" id='email' required>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="form__btn"> Submit </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <AppFooter> </AppFooter>
     </div>
 </template>
 
 <script>
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import AppFooter from '../components/AppFooter';
+
 
 export default {
     components: {
-        Navbar
+        Navbar,
+        AppFooter
     },
     methods: {
         preloadImages(url) {
