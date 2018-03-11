@@ -4,6 +4,22 @@
   </div>
 </template>
 
+
+<script>
+export default {
+  methods: {
+        preloadImages(url) {
+            var img = new Image();
+            img.src = url;
+        }
+    },
+    beforeMount() {
+        this.preloadImages('/queen-mary.png');
+    }
+}
+</script>
+
+
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

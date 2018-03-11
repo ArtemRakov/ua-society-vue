@@ -112,15 +112,6 @@ export default {
     components: {
         Navbar,
         AppFooter
-    },
-    methods: {
-        preloadImages(url) {
-            var img = new Image();
-            img.src = url;
-        }
-    },
-    beforeMount() {
-        this.preloadImages('/queen-mary.png');
     }
 }
 </script>
