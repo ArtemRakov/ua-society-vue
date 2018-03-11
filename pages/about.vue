@@ -72,7 +72,7 @@
             <div class="box">
                 <div class="contact-us__card">
                     <div class="contact-us__form">
-                        <form action="#" class="form"> 
+                        <form action="https://formspree.io/scoff1k@gmail.com" method="POST" class="form"> 
                             <div>
                                 <h2 class="heading-secondary" style="margin-bottom: 4rem">
                                     contact us
@@ -81,17 +81,17 @@
 
                             <div class="form__group">
                                 <label for="email" class="form__label"> Email address </label>
-                                <input type="email" class="form__input" placeholder="" id='email' required>
+                                <input type="email" name="_replyto" class="form__input" placeholder="" id='email' required>
                             </div>
 
                             <div class="form__group">
                                 <label for="message" class="form__label"> Your message </label>
-                                <textarea  class="form__input" id='message' rows="5" required> 
+                                <textarea type='text' name="message"  class="form__input" id='message' rows="5" required> 
                                 </textarea>
                             </div>
 
                             <div class="form__group">
-                                <button class="form__btn"> Submit </button>
+                                <button type="submit" class="form__btn"> Submit </button>
                             </div>
                         </form>
                     </div>
