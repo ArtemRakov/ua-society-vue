@@ -78,14 +78,16 @@
                                     contact us
                                 </h2>
                             </div>
-                            <div class="form__group">
-                                <label for="name" class="form__label"> Full Name </label>
-                                <input type="text" class="form__input" id='name' required>
-                            </div>
 
                             <div class="form__group">
                                 <label for="email" class="form__label"> Email address </label>
                                 <input type="email" class="form__input" placeholder="" id='email' required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message" class="form__label"> Your message </label>
+                                <textarea  class="form__input" id='message' rows="5" required> 
+                                </textarea>
                             </div>
 
                             <div class="form__group">
